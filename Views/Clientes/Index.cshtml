@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Examen";
+}
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <button id="btnNuevo" class="btn btn-primary">Nuevo</button>
+                    </div>
+                    <div class="col-12">
+                        <hr>
+                        <div class="table-responsive">
+                            <table id="dtClientes" class="table table-bordered table-hover table-sm">
+                                <thead class="text-center">
+                                    <tr>
+                                        <th scope="col" class="text-center">Razón Social</th>
+                                        <th scope="col" class="text-center">Nombre Comercial</th>
+                                        <th scope="col" class="text-center">RFC</th>
+                                        <th scope="col" class="text-center">CURP</th>
+                                        <th scope="col" style="width: 10%">Contactos</th>
+                                        <th scope="col" style="width: 10%">Editar</th>
+                                        <th scope="col" style="width: 10%">Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("../Shared/_ModalCliente")
+@Html.Partial("../Shared/_ModalContactos")
+@Html.Partial("../Shared/_ModalContactoDetalle")
