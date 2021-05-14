@@ -187,6 +187,12 @@
     <Content Include="Scripts\Plugins\Bootstrap\bootstrap.min.js.map" />
     <Content Include="Views\Clientes\_ModalCliente.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Service\Service.csproj">
+      <Project>{28f501e3-07be-4974-bcb5-800dff5f10af}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
